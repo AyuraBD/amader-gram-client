@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+ @plugin "daisyui/theme" {
+    name: "corporate";
+    default: true;
+    --color-primary: #016630;
+    --color-secondary: #0B8E89;
+    --color-accent: #AA095F;
+    --color-neutral: #F4F5F6;
+    --color-dark: #2F3337;
+    --color-black: #111111;
+  }
+
+/* styles.css */
+.hover-glow {
+  @apply transition-all duration-300 ease-in-out shadow-sm;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(65, 246, 59, 0.418); /* Example: blue glow */
+}
